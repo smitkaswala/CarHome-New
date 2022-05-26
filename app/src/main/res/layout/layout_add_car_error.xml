@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logoError"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_errors"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/titleError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/raleway_bold_700"
+        android:gravity="center"
+        android:text="@string/new_car_error"
+        android:textColor="@color/textOnWhite"
+        android:textSize="@dimen/_16sdp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/subtitleError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/inter_regular_400"
+        android:gravity="center"
+        android:text="@string/new_car_error_title"
+        android:textColor="@color/textOnWhiteAccentGray"
+        android:textSize="@dimen/_11sdp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/addCarManually"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/cta_background"
+        android:fontFamily="@font/manrope_semibold_600"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/add_car_manually"
+        android:textColor="@color/textOnSolid"
+        android:textSize="@dimen/_11sdp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/inter_regular_400"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:text="@string/car_try_again"
+        android:textColor="@color/textOnWhiteAccentGray"
+        android:textSize="@dimen/_11sdp"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/indicatorError"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/rounded_rect_100_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintWidth_percent="0.3" />
+
+</LinearLayout>

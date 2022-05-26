@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/mLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:fontFamily="@font/inter_bold_700"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:text="@string/remember_hint"
+            android:textColor="@color/textOnWhite"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/mLabelAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLabel"
+            android:fontFamily="@font/inter_regular_400"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:text="@string/remember_hint"
+            android:textColor="@color/textOnWhiteAccentGray"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>
